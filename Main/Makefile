@@ -1,0 +1,2 @@
+Hello:
+	gcc Hello.c
