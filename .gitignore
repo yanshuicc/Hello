@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -43,6 +44,8 @@ Network Trash Folder
 Temporary Items
 .apdisk
 =======
+=======
+>>>>>>> 89ae3130e69a1ed22514a6a63a883888e15d91b9
 # Object files
 *.o
 *.ko
@@ -75,4 +78,7 @@ Temporary Items
 
 # Debug files
 *.dSYM/
+<<<<<<< HEAD
+>>>>>>> 89ae3130e69a1ed22514a6a63a883888e15d91b9
+=======
 >>>>>>> 89ae3130e69a1ed22514a6a63a883888e15d91b9
