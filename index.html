@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Hello : a test repository">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Hello</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/yanshuicc/Hello">View on GitHub</a>
+
+          <h1 id="project_title">Hello</h1>
+          <h2 id="project_tagline">a test repository</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/yanshuicc/Hello/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/yanshuicc/Hello/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>这个是github基本功能的记录。</p>
+
+<p>系统为ubuntu。</p>
+
+<p>git安装比较简单</p>
+
+<pre><code>sudo apt-get install git
+</code></pre>
+
+<p>然后初始化</p>
+
+<pre><code>git config --global user.name "Your Name"
+git config --global user.email "email@example.com"
+</code></pre>
+
+<p>生成密钥,~/.ssh/中有d_rsa和id_rsa.pub两个文件，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以告诉任何人</p>
+
+<pre><code>ssh-keygen -t rsa -C "1258474820@qq.com"
+</code></pre>
+
+<p>登陆GitHub，打开“Account settings”，“SSH Keys”页面：</p>
+
+<p>然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容</p>
+
+<p>远程库和本地库绑定，origin为远程库的名字</p>
+
+<pre><code>git remote add origin git@github.com:yanshuicc/Hello.git
+</code></pre>
+
+<p>远程库推送，第一次推送-u绑定远程分支和本地分支</p>
+
+<pre><code>git push [-u] origin master
+</code></pre>
+
+<p>创建版本库</p>
+
+<pre><code>git init
+</code></pre>
+
+<p>提交文件，commit只提交add的文件</p>
+
+<pre><code>git add &lt;file-name&gt;
+git commit -m ""
+</code></pre>
+
+<p>查看repository状况</p>
+
+<pre><code>git status
+</code></pre>
+
+<p>查看修改变化</p>
+
+<pre><code>git diff
+</code></pre>
+
+<p>查看最近提交记录</p>
+
+<pre><code>git log [--pretty=oneline]
+</code></pre>
+
+<p>撤销修改,撤销未add文件的修改，回到上次add的状态。</p>
+
+<pre><code>git checkout -- &lt;file-name&gt;
+</code></pre>
+
+<p>撤销add,撤销未commit文件的修改，回到上次commit的状态。</p>
+
+<pre><code>git reset HEAD &lt;file-name&gt;
+</code></pre>
+
+<p>恢复版本，HEAD表示当前版本，^表示上个，获取前面Ｎ个commit版本。</p>
+
+<pre><code>git reset --hard HEAD[^|~N]
+git reset --hard &lt;版本号&gt;
+</code></pre>
+
+<p>查看操作历史命令</p>
+
+<pre><code>git reflog
+</code></pre>
+
+<p>删除文件</p>
+
+<pre><code>rm &lt;file-name&gt;
+git rm &lt;file-name&gt;
+git commit -m ""
+</code></pre>
+
+<p>分支</p>
+
+<p>创建分支</p>
+
+<pre><code>git branch &lt;brach-name&gt;
+</code></pre>
+
+<p>切换分支</p>
+
+<pre><code>git checkout &lt;branch-name&gt;
+</code></pre>
+
+<p>创建并切换分支</p>
+
+<pre><code>git checkout -b &lt;branch-name&gt;
+</code></pre>
+
+<p>查看分支</p>
+
+<pre><code>git branch
+</code></pre>
+
+<p>合并指定分支到当前分支</p>
+
+<pre><code>git merge &lt;branch-name&gt;
+</code></pre>
+
+<p>删除分支</p>
+
+<pre><code>git branch -d &lt;name&gt;
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Hello maintained by <a href="https://github.com/yanshuicc">yanshuicc</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
