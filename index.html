@@ -55,9 +55,11 @@ git config --global user.email "email@example.com"
 
 <p>然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容</p>
 
-<p>远程库和本地库绑定，origin为远程库的名字</p>
+<p>远程库和本地库绑定，origin为远程库的名字
+本地库和远程库地址修改绑定</p>
 
 <pre><code>git remote add origin git@github.com:yanshuicc/Hello.git
+git remote set-url origin &lt;new adress&gt;
 </code></pre>
 
 <p>远程库推送，第一次推送-u绑定远程分支和本地分支</p>
@@ -88,7 +90,7 @@ git commit -m ""
 
 <p>查看最近提交记录</p>
 
-<pre><code>git log [--pretty=oneline]
+<pre><code>git log [--graph] [--pretty=oneline] [--abbrev-commit]
 </code></pre>
 
 <p>撤销修改,撤销未add文件的修改，回到上次add的状态。</p>
@@ -150,6 +152,8 @@ git commit -m ""
 
 <pre><code>git branch -d &lt;name&gt;
 </code></pre>
+
+<p>官方帮助地址：<a href="https://help.github.com/">https://help.github.com/</a></p>
       </section>
     </div>
 
